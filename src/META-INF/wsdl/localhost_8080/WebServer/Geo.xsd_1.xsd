@@ -1,0 +1,32 @@
+<?xml version='1.0' encoding='UTF-8'?><!-- Published by JAX-WS RI (http://jax-ws.java.net). RI's version is Metro/2.3.1-b419 (branches/2.3.1.x-7937; 2014-08-04T08:11:03+0000) JAXWS-RI/2.2.10-b140803.1500 JAXWS-API/2.2.11 JAXB-RI/2.2.10-b140802.1033 JAXB-API/2.2.12-b140109.1041 svn-revision#unknown. --><xs:schema xmlns:tns="http://geo.services.obaro/" xmlns:xs="http://www.w3.org/2001/XMLSchema" version="1.0" targetNamespace="http://geo.services.obaro/">
+
+<xs:element name="getCurrentLocation" type="tns:getCurrentLocation"/>
+
+<xs:element name="getCurrentLocationResponse" type="tns:getCurrentLocationResponse"/>
+
+<xs:element name="searh" type="tns:searh"/>
+
+<xs:element name="searhResponse" type="tns:searhResponse"/>
+
+<xs:complexType name="getCurrentLocation">
+<xs:sequence/>
+</xs:complexType>
+
+<xs:complexType name="getCurrentLocationResponse">
+<xs:sequence>
+<xs:element name="return" type="xs:string" minOccurs="0"/>
+</xs:sequence>
+</xs:complexType>
+
+<xs:complexType name="searh">
+<xs:sequence>
+<xs:element name="location" type="xs:string" minOccurs="0"/>
+</xs:sequence>
+</xs:complexType>
+
+<xs:complexType name="searhResponse">
+<xs:sequence>
+<xs:element name="return" type="xs:string" minOccurs="0"/>
+</xs:sequence>
+</xs:complexType>
+</xs:schema>
