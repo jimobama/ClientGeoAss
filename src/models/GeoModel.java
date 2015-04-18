@@ -7,17 +7,10 @@ package models;
 
 import controllers.GeoController;
 import controllers.IController;
-import helps.Console;
 import helps.ISubject;
-import helps.Machine;
 import java.util.ArrayList;
-import org.json.simple.JSONArray;
 import org.json.simple.JSONObject;
 import org.json.simple.parser.JSONParser;
-
-
-
-
 
 /**
  *
@@ -33,9 +26,6 @@ public class GeoModel implements ISubject{
        
     }
 
-    
-    
-    
     public String getCurrentAddress()
     {
      String json= GeoModel.getCurrentLocation();

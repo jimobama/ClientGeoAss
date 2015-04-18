@@ -11,13 +11,11 @@ import helps.ISubject;
 import java.awt.Dimension;
 import java.awt.GridBagConstraints;
 import java.awt.GridBagLayout;
-
 import java.awt.Insets;
 import java.awt.event.ActionEvent;
 import java.awt.event.ActionListener;
 import java.awt.event.KeyEvent;
 import java.awt.event.KeyListener;
-
 import java.util.ArrayList;
 import javax.swing.BorderFactory;
 import javax.swing.JButton;
@@ -81,7 +79,7 @@ public class GeoView extends JFrame implements ISubject {
 
     private void initGui() {
         GridBagLayout layout = new GridBagLayout();
-        this.lblSearchAddress = new JLabel("Search:");
+        this.lblSearchAddress = new JLabel("Find Address:");
         this.txtSearchAddress = new JTextField(40);
         this.txtSearchAddress.addKeyListener(eventHandler);
         this.btnSearchAddress = new JButton("Search Now");
